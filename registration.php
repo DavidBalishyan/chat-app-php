@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($stmt->execute()) {
         echo "Registration successful!";
+        header("Location: login.php");
     } else {
         echo "Error: " . $stmt->error;
     }
@@ -20,5 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Register</button>
-    <button type="button" onclick="location.href='login.php'">Already registered? Login</button>
+    <p>Already registered?</p><a href="login.php"><button type="button">Login</button></a>
 </form>

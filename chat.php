@@ -39,6 +39,7 @@ $result = $conn->query("SELECT messages.message, users.username, messages.create
         <button type="submit">Send</button>
     </form>
     <button onclick="location.reload()">Refresh</button>
+    <a href="logout.php"><button>Logout</button></a>
     <script>
 setInterval(() => {
     fetch('fetch_messages.php')

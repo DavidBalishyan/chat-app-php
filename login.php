@@ -23,5 +23,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Login</button>
-    <button type="button" onclick="location.href='registration.php'">Not registered? Register</button>
+    <p>Not registered?</p><a href="registration.php"><button type="button">Register</button></a>
 </form>
